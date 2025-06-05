@@ -25,7 +25,7 @@
       }
 
       button.text('Loading...');
-
+// GET DATA THROUGH AJAX
       $.get(nextUrl, function (data) {
         var newItems = $(data).find('#product-grid').html();
         $('#product-grid').append(newItems);
